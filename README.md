@@ -1,14 +1,14 @@
 # kube-configmap-watcher
 
-A lightweight Go-based tool that monitors Kubernetes ConfigMap events in real-time using the client-go informer framework.
+A lightweight Go-based tool that monitors Kubernetes ConfigMap and Pod events in real-time using the client-go informer framework.
 
 ## Features
 
-- 🔍 Watches ConfigMap add, update, and delete events
-- 🌐 Monitors events across all namespaces  
-- 📝 Clean, structured event logging
+- 🔍 Watches ConfigMap and Pod add, update, and delete events
+- 🔗 Indexes Pods based on referenced ConfigMaps
+- 📌 Maps ConfigMap updates to affected Pods
 - 🛑 Graceful shutdown with signal handling
-- ⚡ Built with Kubernetes informer framework for efficiency
+- ⚡ Built using Kubernetes Shared Informer framework
 
 ## Prerequisites
 
